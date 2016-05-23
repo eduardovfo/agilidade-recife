@@ -1,0 +1,38 @@
+nav.menu 
+	@extend .border-box
+	color: $cor-de-texto-padrao
+	margin: -1em -1em 1em
+	height: auto
+	width: 105%
+	padding: 0
+	
+	span.icon-menu
+		font-size: 3em
+		display: block
+		margin: 0.2em
+		position: absolute
+		bottom: -0.5em
+		
+		
+	
+	ul
+		@extend .border-box
+		display: none
+		background-color: rgba($preto, 0.75)
+		margin: 0
+		padding: 0
+		
+		li
+			@extend .border-box
+			display: block
+			margin: 0 
+			padding: 0
+			
+			a 
+				@extend .border-box
+				display: block
+				position: relative
+				margin: 0
+				font-size: 1.2em
+				padding: 1em 2em
+				border-bottom: 1px dashed rgba($branco, 0.3)

@@ -1,0 +1,165 @@
+.cbp-fbscroller section.home
+    height: 100%
+    
+section
+    padding: 1em
+    
+    article
+        padding-right: 1em
+        padding-top: 2em
+        
+        p
+            padding: 0.3em 0
+            text-align: center
+        
+    &.home
+        @extend .text-shadow-branco
+        color: $preto
+        text-align: center
+        
+        article
+            width: 290px
+            margin: 0 3% 0 auto
+        
+        .icone-ar
+            width: 70%
+            display: block
+            margin: 5em auto 2em
+            
+        h2, h3, h4, h5, h6
+            padding: 0
+            margin: 0 auto
+            text-align: center
+            
+        h2
+            strong
+                color: $cor-secundaria
+            
+        h5
+            span
+                font-size: 2em
+                font-weight: 100
+                vertical-align: center
+        
+        h6
+            padding: 1em 0 0
+            
+            &.local
+                padding: 0.5em 0 2em 4em
+                color: $cor-secundaria
+            
+    &.sobre
+        color: $preto
+        
+        .contato
+            text-align: center
+            
+            p
+                color: $cor-primaria
+                
+                span
+                    font-size: 3em
+                    color: $preto
+            
+            input, button
+                @extend .transition-padrao
+                @extend .border-box
+                padding: 0.5em
+                margin-bottom: 0.2em
+                min-width: 14em
+                width: 50%
+                font-size: 1.2em
+                outline: none
+            
+            input
+                border: 1px solid lighten($preto, 90%)
+                
+            button
+                border: 1px solid darken($cor-primaria, 10%)
+                background-color: $cor-primaria
+                color: $branco
+                cursor: pointer
+                
+                &:hover
+                    background-color: darken($cor-primaria, 10%)
+                
+    &.palestrantes
+        background-color: $cor-primaria
+        color: $branco
+        
+        .foto-do-palestrante
+            @extend .cover-background
+            @extend .criar-circulo
+            width: 120px
+            height: 120px
+            display: block
+            border: 5px solid $branco
+            margin: 0 auto
+            
+        ul
+            text-align: center
+            
+            li
+                @extend .border-box
+                display: inline-block
+                width: 32%
+                min-width: 250px
+                text-align: center
+                
+                p
+                
+                    span
+                        font-size: 3em
+                
+                h4, h6
+                    margin: 0
+                    padding: 0.2em 0
+                
+    &.patrocinadores
+        background-color: $branco
+        color: $cor-de-texto-padrao
+            
+        ul
+            text-align: center
+            
+            li
+                display: inline-block
+                vertical-align: middle
+                
+                img
+                    width: 150px
+                
+    &.programa
+        background-color: $cor-info
+    
+    &.local
+        background-color: lighten($preto, 90%)
+        background-image: none
+        color: $preto
+            
+        p
+            font-size: 1.2em
+            
+            span
+                font-size: 1.5em
+                
+    &.contato
+        background-color: $cor-primaria
+        background-image: none
+        color: $branco
+            
+        p
+            font-size: 1.2em
+            text-align: center
+            margin: 0 0 1em 0
+            
+            span
+                font-size: 2.5em
+                margin: 2em 0.2em
+                
+@media screen and (max-device-width: 800px)
+    .cbp-fbscroller 
+        
+        section
+            height: auto !important
+            position: relative

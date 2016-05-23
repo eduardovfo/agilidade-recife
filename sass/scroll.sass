@@ -1,0 +1,36 @@
+@import "compass/css3"
+
+@import "config/_cores"
+@import "config/_variaveis"
+
+@import "shared/_extends"
+
+html, body,  .container, .cbp-fbscroller, .cbp-fbscroller section.home
+	height: 100%
+html, body,  .container, .cbp-fbscroller, .cbp-fbscroller section
+	min-height: 100%
+
+.cbp-fbscroller
+
+	section
+		@extend .cover-background
+		position: relative
+		background-position: top right
+		background-repeat: no-repeat
+
+.no-touch 
+
+	.cbp-fbscroller
+		
+		section
+			background-attachment: fixed
+
+
+
+#fbsection
+
+	&1
+		background-image: url(../imgs/1.jpg)
+
+	&2
+		background-image: url(../imgs/2.jpg)

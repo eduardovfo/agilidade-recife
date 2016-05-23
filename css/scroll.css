@@ -1,0 +1,85 @@
+.box-shadow-padrao {
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.border-radius-padrao {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.criar-circulo {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.border-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cover-background, .cbp-fbscroller section {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.text-shadow-preto {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-branco {
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.transition-padrao {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.box-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cria-flex {
+  display: inline-block;
+  -webkit-flex: 1 0;
+  flex: 1 0;
+}
+
+html, body, .container, .cbp-fbscroller, .cbp-fbscroller section.home {
+  height: 100%;
+}
+
+html, body, .container, .cbp-fbscroller, .cbp-fbscroller section {
+  min-height: 100%;
+}
+
+.cbp-fbscroller section {
+  position: relative;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.no-touch .cbp-fbscroller section {
+  background-attachment: fixed;
+}
+
+#fbsection1 {
+  background-image: url(../imgs/1.jpg);
+}
+#fbsection2 {
+  background-image: url(../imgs/2.jpg);
+}
+
+/*# sourceMappingURL=scroll.css.map */

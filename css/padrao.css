@@ -1,0 +1,423 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,400italic,300italic);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.box-shadow-padrao, header {
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.border-radius-padrao {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.criar-circulo, section.palestrantes .foto-do-palestrante {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.border-box, header, nav.menu, nav.menu ul, nav.menu ul li, nav.menu ul li a, section.sobre .contato input, section.sobre .contato button, section.palestrantes ul li, .botao-padrao {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cover-background, section.palestrantes .foto-do-palestrante {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.text-shadow-preto {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-branco, section.home {
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.transition-padrao, section.sobre .contato input, section.sobre .contato button {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.box-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cria-flex {
+  display: inline-block;
+  -webkit-flex: 1 0;
+  flex: 1 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+header {
+  position: fixed;
+  padding: 0.5em;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .logo {
+  text-align: center;
+}
+header .logo img {
+  height: 1.2em;
+  padding: 0.5em;
+}
+header span {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding: 0 0 0.6em 0.1em;
+}
+
+nav.menu {
+  color: #666666;
+  margin: -1em -1em 1em;
+  height: auto;
+  width: 105%;
+  padding: 0;
+}
+nav.menu span.icon-menu {
+  font-size: 3em;
+  display: block;
+  margin: 0.2em;
+  position: absolute;
+  bottom: -0.5em;
+  padding: 0.8em;
+}
+nav.menu ul {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+  padding: 0;
+}
+nav.menu ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+nav.menu ul li a {
+  display: block;
+  position: relative;
+  margin: 0;
+  font-size: 1.2em;
+  padding: 1em 2em;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.cbp-fbscroller section.home {
+  height: 100%;
+}
+
+section {
+  padding: 1em;
+}
+section article {
+  padding-right: 1em;
+  padding-top: 2em;
+}
+section article p {
+  padding: 0.3em 0;
+  text-align: center;
+}
+section.home {
+  color: black;
+  text-align: center;
+}
+section.home article {
+  width: 290px;
+  margin: 0 3% 0 auto;
+}
+section.home .icone-ar {
+  width: 70%;
+  display: block;
+  margin: 5em auto 2em;
+}
+section.home h2, section.home h3, section.home h4, section.home h5, section.home h6 {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+section.home h2 strong {
+  color: #A90404;
+}
+section.home h5 span {
+  font-size: 2em;
+  font-weight: 100;
+  vertical-align: center;
+}
+section.home h6 {
+  padding: 1em 0 0;
+}
+section.home h6.local {
+  padding: 0.5em 0 2em 6.7em;
+  color: #A90404;
+}
+section.sobre {
+  color: black;
+}
+section.sobre .contato {
+  text-align: center;
+}
+section.sobre .contato p {
+  color: #ffb33c;
+}
+section.sobre .contato p span {
+  font-size: 3em;
+  color: black;
+}
+section.sobre .contato input, section.sobre .contato button {
+  padding: 0.5em;
+  margin-bottom: 0.2em;
+  min-width: 14em;
+  width: 10em;
+  font-size: 1.2em;
+  outline: none;
+}
+section.sobre .contato input {
+  border: 1px solid #e6e6e6;
+}
+section.sobre .contato button {
+  border: 1px solid #ff9f09;
+  background-color: #ffb33c;
+  color: white;
+  cursor: pointer;
+}
+section.sobre .contato button:hover {
+  background-color: #ff9f09;
+}
+section.palestrantes {
+  background-color: #ffb33c;
+  color: white;
+}
+section.palestrantes .foto-do-palestrante {
+  width: 120px;
+  height: 120px;
+  display: block;
+  border: 5px solid white;
+  margin: 0 auto;
+}
+section.palestrantes ul {
+  text-align: center;
+}
+section.palestrantes ul li {
+  display: inline-block;
+  width: 32%;
+  min-width: 250px;
+  text-align: center;
+}
+section.palestrantes ul li p span {
+  font-size: 3em;
+}
+section.palestrantes ul li h4, section.palestrantes ul li h6 {
+  margin: 0;
+  padding: 0.2em 0;
+}
+section.patrocinadores {
+  background-color: white;
+  color: #666666;
+}
+section.patrocinadores ul {
+  text-align: center;
+}
+section.patrocinadores ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+section.patrocinadores ul li img {
+  width: 150px;
+}
+section.programa {
+  background-color: #09ACCB;
+}
+section.local {
+  background-color: #e6e6e6;
+  background-image: none;
+  color: black;
+}
+section.local p {
+  font-size: 1.2em;
+}
+section.local p span {
+  font-size: 1.5em;
+}
+section.contato {
+  background-color: #ffb33c;
+  background-image: none;
+  color: white;
+}
+section.contato p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+section.contato p span {
+  font-size: 2.5em;
+  margin: 2em 0.2em;
+}
+
+@media screen and (max-device-width: 800px) {
+  .cbp-fbscroller section {
+    height: auto !important;
+    position: relative;
+  }
+}
+a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+.botao-padrao {
+  display: block;
+  padding: 1em 2em;
+  color: white;
+  background-color: #ffb33c;
+  text-align: center;
+  margin: 1em auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+.bronze {
+	color: #cd7f32;
+}
+
+.prata {
+	color: #575757;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+h2 {
+  padding: 1em 0 1em;
+  font-weight: 300;
+  font-size: 3.7em;
+}
+
+h3 {
+  padding: 2em 0 1em;
+  font-weight: 300;
+  font-size: 2.3em;
+}
+
+h4 {
+  padding: 1em 0 1em;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+h5 {
+  padding: 1em 0 1em;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+h6 {
+  padding: 1em 0 1em;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=padrao.css.map */
