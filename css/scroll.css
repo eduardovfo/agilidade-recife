@@ -57,13 +57,13 @@
   flex: 1 0;
 }
 
-html, body, .container, .cbp-fbscroller, .cbp-fbscroller section.home {
-  /*height: 100%;*/
+/*html, body, .container, .cbp-fbscroller, .cbp-fbscroller section.home {
+  height: 100%;
 }
 
 html, body, .container, .cbp-fbscroller, .cbp-fbscroller section {
-  /*min-height: 100%;*/
-}
+  min-height: 100%;
+}*/
 
 .cbp-fbscroller section {
   position: relative;
