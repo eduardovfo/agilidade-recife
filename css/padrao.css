@@ -202,6 +202,7 @@ section article p {
 section.home {
   color: black;
   text-align: center;
+  min-height: 100vh;
 }
 section.home article {
   width: 290px;
