@@ -136,6 +136,7 @@ header {
 }
 header .logo {
   text-align: center;
+  margin-top: 0.5em;
 }
 header .logo img {
   height: 1em;
