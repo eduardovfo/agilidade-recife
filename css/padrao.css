@@ -156,9 +156,8 @@ nav.menu {
   padding: 0;
 }
 nav.menu span.icon-menu {
-  font-size: 3em;
+  font-size: 2.5em;
   display: block;
-  margin: 0.2em;
   position: absolute;
   bottom: -0.5em;
   padding: 0.8em;
