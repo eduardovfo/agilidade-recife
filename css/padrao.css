@@ -138,8 +138,7 @@ header .logo {
   text-align: center;
 }
 header .logo img {
-  height: 1.2em;
-  padding: 0.5em;
+  height: 1em;
 }
 header span {
   display: block;
