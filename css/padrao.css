@@ -305,14 +305,22 @@ section.patrocinadores ul {
 section.patrocinadores ul li {
   display: inline-block;
   vertical-align: middle;
+  padding: 0 10px;
 }
 section.patrocinadores ul li img {
   max-width: 200px;
-  min-height: 50px;
 }
 section.programa {
   background-color: #09ACCB;
-  padding: 1em 0;
+  padding: 1em 0 3em;
+}
+section.programa p {
+  text-align: center;
+}
+section.programa p small {
+  color: rgba(255, 255, 0, 0.8);
+  font-weight: 100;
+  font-size: 0.9em;
 }
 section.local {
   background-color: #e6e6e6;
@@ -435,7 +443,7 @@ h6 {
 table.tabela {
   width: 100%;
   max-width: 50em;
-  margin: 0 auto 4em;
+  margin: 0 auto 1em;
 }
 table.tabela thead tr {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
