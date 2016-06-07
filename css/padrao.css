@@ -120,6 +120,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  line-height: 1.3em;
 }
 
 strong {
@@ -136,10 +137,9 @@ header {
 }
 header .logo {
   text-align: center;
-  margin-top: 0.5em;
 }
 header .logo img {
-  height: 1em;
+  height: 1.2em;
 }
 header span {
   display: block;
@@ -157,11 +157,11 @@ nav.menu {
   padding: 0;
 }
 nav.menu span.icon-menu {
-  font-size: 2.5em;
+  font-size: 3em;
   display: block;
+  margin: 0.2em;
   position: absolute;
   bottom: -0.5em;
-  padding: 0.8em;
 }
 nav.menu ul {
   display: none;
@@ -201,7 +201,6 @@ section article p {
 section.home {
   color: black;
   text-align: center;
-  min-height: 100vh;
 }
 section.home article {
   width: 290px;
@@ -229,7 +228,7 @@ section.home h6 {
   padding: 1em 0 0;
 }
 section.home h6.local {
-  padding: 0.5em 0 2em 6.7em;
+  padding: 0.5em 0 2em 4em;
   color: #A90404;
 }
 section.sobre {
@@ -249,7 +248,7 @@ section.sobre .contato input, section.sobre .contato button {
   padding: 0.5em;
   margin-bottom: 0.2em;
   min-width: 14em;
-  width: 10em;
+  width: 50%;
   font-size: 1.2em;
   outline: none;
 }
@@ -281,9 +280,13 @@ section.palestrantes ul {
 }
 section.palestrantes ul li {
   display: inline-block;
+  vertical-align: top;
   width: 32%;
   min-width: 250px;
   text-align: center;
+}
+section.palestrantes ul li p a {
+  font-size: 0.8em;
 }
 section.palestrantes ul li p span {
   font-size: 3em;
@@ -304,15 +307,21 @@ section.patrocinadores ul li {
   vertical-align: middle;
 }
 section.patrocinadores ul li img {
-  width: 150px;
+  max-width: 200px;
+  min-height: 50px;
 }
 section.programa {
   background-color: #09ACCB;
+  padding: 1em 0;
 }
 section.local {
   background-color: #e6e6e6;
   background-image: none;
   color: black;
+  padding: 1em 0;
+}
+section.local article {
+  padding: 0;
 }
 section.local p {
   font-size: 1.2em;
@@ -335,6 +344,17 @@ section.contato p span {
   margin: 2em 0.2em;
 }
 
+@media screen and (min-device-width: 800px) {
+  section.local article .mapa-google, section.local article .endereco {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+  }
+  section.local article .mapa-google h4, section.local article .mapa-google p, section.local article .endereco h4, section.local article .endereco p {
+    text-align: left;
+    padding: 0.3em;
+  }
+}
 @media screen and (max-device-width: 800px) {
   .cbp-fbscroller section {
     height: auto !important;
@@ -371,22 +391,14 @@ ul li {
   width: 100%;
 }
 
-.bronze {
-	color: #cd7f32;
-}
-
-.prata {
-	color: #575757;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   text-align: center;
+  line-height: 1.3em;
 }
 
 h1 {
   font-size: 2em;
-  line-height: 1.3em;
   font-weight: 300;
 }
 
@@ -418,6 +430,44 @@ h6 {
   padding: 1em 0 1em;
   font-weight: 700;
   font-size: 1.1em;
+}
+
+table.tabela {
+  width: 100%;
+  max-width: 50em;
+  margin: 0 auto 4em;
+}
+table.tabela thead tr {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+table.tabela thead tr th {
+  padding: 1em;
+  font-size: 1.4em;
+  font-weight: 100;
+  text-align: center;
+}
+table.tabela tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+table.tabela tbody tr td {
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+table.tabela tbody tr td:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+table.tabela tbody tr td author {
+  font-style: italic;
+  display: block;
+  font-size: 0.85em;
+  padding-top: 0.8em;
+}
+table.tabela tbody tr:last-child {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+table.tabela tbody tr.intervalo {
+  background-color: #FFB019;
 }
 
 /*# sourceMappingURL=padrao.css.map */

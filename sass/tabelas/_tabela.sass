@@ -1,0 +1,39 @@
+table
+    &.tabela
+        width: 100%
+        max-width: 50em
+        margin: 0 auto 4em
+        
+        thead
+            tr
+                border-bottom: 3px solid rgba($branco, 0.5)
+                
+                th
+                    padding: 1em
+                    font-size: 1.4em
+                    font-weight: 100
+                    text-align: center
+        
+        tbody
+            tr
+                border-bottom: 1px solid rgba($branco, 0.3)
+                
+                td
+                    padding: 1em
+                    text-align: center
+                    background-color: rgba($preto, 0.15)
+                    
+                    &:nth-child(even)
+                        background-color: rgba($preto, 0.1)
+                        
+                    author
+                        font-style: italic
+                        display: block
+                        font-size: 0.85em
+                        padding-top: 0.8em
+                        
+                &:last-child
+                    border-bottom: 2px solid rgba($branco, 0.5)
+                    
+                &.intervalo
+                    background-color: #FFB019
