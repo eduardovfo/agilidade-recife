@@ -121,6 +121,9 @@ section
     &.patrocinadores
         background-color: $branco
         color: $cor-de-texto-padrao
+        
+        h4
+            padding-bottom: 0
             
         ul
             text-align: center
@@ -128,7 +131,7 @@ section
             li
                 display: inline-block
                 vertical-align: middle
-                padding: 0 10px
+                padding: 10px
                 
                 img
                     max-width: 200px
@@ -154,11 +157,22 @@ section
         article
             padding: 0
             
+            .mapa-google
+                +box-shadow(1px 1px 10px rgba($preto, 0.3))
+                border: 3px solid $branco
+            
+            .endereco
+                padding: 1em
+                p, h4
+                    text-align: left
+                    
+                    span
+                        vertical-align: middle
+                        font-size: 1.25em
+                
         p
             font-size: 1.2em
-            
-            span
-                font-size: 1.5em
+            color: lighten($preto, 30%)
                 
     &.contato
         background-color: $cor-primaria
@@ -178,10 +192,16 @@ section
     section
         &.local
             article
+                padding: 0 5%
+                
+                .endereco
+                    +box-sizing(border-box)
+                    padding-left: 1em
+                
                 .mapa-google, .endereco
                     display: inline-block
                     width: 49%
-                    vertical-align: middle
+                    vertical-align: top
                     
                     h4, p
                         text-align: left

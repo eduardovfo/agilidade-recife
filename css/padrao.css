@@ -299,13 +299,16 @@ section.patrocinadores {
   background-color: white;
   color: #666666;
 }
+section.patrocinadores h4 {
+  padding-bottom: 0;
+}
 section.patrocinadores ul {
   text-align: center;
 }
 section.patrocinadores ul li {
   display: inline-block;
   vertical-align: middle;
-  padding: 0 10px;
+  padding: 10px;
 }
 section.patrocinadores ul li img {
   max-width: 200px;
@@ -331,11 +334,25 @@ section.local {
 section.local article {
   padding: 0;
 }
+section.local article .mapa-google {
+  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  border: 3px solid white;
+}
+section.local article .endereco {
+  padding: 1em;
+}
+section.local article .endereco p, section.local article .endereco h4 {
+  text-align: left;
+}
+section.local article .endereco p span, section.local article .endereco h4 span {
+  vertical-align: middle;
+  font-size: 1.25em;
+}
 section.local p {
   font-size: 1.2em;
-}
-section.local p span {
-  font-size: 1.5em;
+  color: #4d4d4d;
 }
 section.contato {
   background-color: #ffb33c;
@@ -353,10 +370,19 @@ section.contato p span {
 }
 
 @media screen and (min-device-width: 800px) {
+  section.local article {
+    padding: 0 5%;
+  }
+  section.local article .endereco {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 1em;
+  }
   section.local article .mapa-google, section.local article .endereco {
     display: inline-block;
     width: 49%;
-    vertical-align: middle;
+    vertical-align: top;
   }
   section.local article .mapa-google h4, section.local article .mapa-google p, section.local article .endereco h4, section.local article .endereco p {
     text-align: left;

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?ju7dzi');
+    src:    url('fonts/icomoon.eot?ju7dzi#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?ju7dzi') format('truetype'),
+        url('fonts/icomoon.woff?ju7dzi') format('woff'),
+        url('fonts/icomoon.svg?ju7dzi#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-schedule:before {
+    content: "\e8b5";
+}
+.icon-insert_invitation:before {
+    content: "\e24f";
+}
+.icon-location_city:before {
+    content: "\e7f1";
+}
+.icon-pin_drop:before {
+    content: "\e55e";
+}
+
