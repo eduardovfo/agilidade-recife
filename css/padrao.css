@@ -61,7 +61,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.border-radius-padrao {
+.border-radius-padrao, .mce_inline_error, #mce-error-response, #mce-success-response {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 50%;
 }
 
-.border-box, header, nav.menu, nav.menu ul, nav.menu ul li, nav.menu ul li a, section.sobre .contato input, section.sobre .contato button, section.palestrantes ul li, .botao-padrao {
+.border-box, header, nav.menu, nav.menu ul, nav.menu ul li, nav.menu ul li a, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error, section.palestrantes ul li, .botao-padrao, #mce-error-response, #mce-success-response {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -94,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
 }
 
-.transition-padrao, section.sobre .contato input, section.sobre .contato button {
+.transition-padrao, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -244,7 +244,7 @@ section.sobre .contato p span {
   font-size: 3em;
   color: black;
 }
-section.sobre .contato input, section.sobre .contato button {
+section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error {
   padding: 0.5em;
   margin-bottom: 0.2em;
   min-width: 14em;
@@ -423,6 +423,38 @@ ul li {
   margin: 1em auto;
   max-width: 400px;
   width: 100%;
+}
+
+.mce_inline_error {
+  font-family: "Roboto", sans-serif !important;
+  background-color: rgba(169, 4, 4, 0.8) !important;
+  color: white !important;
+  margin: 0 auto 1em !important;
+  display: block;
+  font-weight: 300 !important;
+}
+
+input.mce_inline_error {
+  background: white !important;
+  margin: 0 auto 0.5em !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+#mce-error-response, #mce-success-response {
+  padding: 0.5em;
+  color: white;
+  min-width: 14em;
+  width: 50%;
+  display: block;
+  margin: 1em auto;
+}
+
+#mce-error-response {
+  background: rgba(169, 4, 4, 0.8);
+}
+
+#mce-success-response {
+  background: #3E9522;
 }
 
 h1, h2, h3, h4, h5, h6 {

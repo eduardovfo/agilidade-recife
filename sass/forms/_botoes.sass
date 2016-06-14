@@ -8,3 +8,36 @@
     margin: 1em auto
     max-width: 400px
     width: 100%
+    
+
+	
+.mce_inline_error
+    @extend .border-radius-padrao
+    font-family: $fonte-padrao !important
+    background-color: rgba($cor-secundaria, 0.8) !important
+    color: $branco !important
+    margin: 0 auto 1em !important
+    display: block
+    font-weight: 300 !important
+    
+input.mce_inline_error
+    background: $branco !important
+    margin: 0 auto 0.5em !important
+    color: rgba($preto, 0.6) !important
+    
+#mce-error-response, #mce-success-response
+    @extend .border-box
+    @extend .border-radius-padrao
+    padding: 0.5em
+    color: $branco
+    min-width: 14em
+    width: 50%
+    display: block
+    margin: 1em auto
+    
+#mce-error-response
+    background: rgba($cor-secundaria, 0.8)
+    
+#mce-success-response
+    background: $cor-sucesso
+    
