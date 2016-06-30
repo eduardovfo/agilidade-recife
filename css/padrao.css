@@ -139,7 +139,7 @@ header .logo {
   text-align: center;
 }
 header .logo img {
-  height: 1.2em;
+  height: 1em;
 }
 header span {
   display: block;
@@ -157,11 +157,11 @@ nav.menu {
   padding: 0;
 }
 nav.menu span.icon-menu {
-  font-size: 3em;
+  font-size: 2.5em;
   display: block;
-  margin: 0.2em;
   position: absolute;
   bottom: -0.5em;
+  padding: 0.8em;
 }
 nav.menu ul {
   display: none;
@@ -228,7 +228,7 @@ section.home h6 {
   padding: 1em 0 0;
 }
 section.home h6.local {
-  padding: 0.5em 0 2em 4em;
+  padding: 0.5em 0 2em 6.7em;
   color: #A90404;
 }
 section.sobre {
