@@ -4,3 +4,21 @@ a
 
 	&:hover
 		color: $preto
+		
+
+	&.link-inscricao
+		@extend .botao-padrao
+		+text-shadow(none)
+		border-color: $cor-secundaria
+		font-size: 16px
+		max-width: 600px
+		text-transform: uppercase
+		
+		&:hover
+			background-color: darken($cor-primaria, 10%)
+			
+	&.link-principal
+		color: $cor-primaria
+		
+		&:hover
+			color: darken($cor-primaria, 10%)

@@ -78,7 +78,7 @@ html, body, .container, .cbp-fbscroller, .cbp-fbscroller section {
 #fbsection1 {
   background-image: url(../imgs/1.jpg);
 }
-#fbsection2 {
+#fbsection2, #fbsection.inscricao {
   background-image: url(../imgs/2.jpg);
 }
 

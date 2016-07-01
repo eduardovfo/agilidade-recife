@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 50%;
 }
 
-.border-box, header, nav.menu, nav.menu ul, nav.menu ul li, nav.menu ul li a, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error, section.palestrantes ul li, .botao-padrao, #mce-error-response, #mce-success-response {
+.border-box, header, nav.menu, nav.menu ul, nav.menu ul li, nav.menu ul li a, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error, section.palestrantes ul li, .botao-padrao, a.link-inscricao, #mce-error-response, #mce-success-response, .chamada-inscricao .lista-de-itens .item span {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -94,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
 }
 
-.transition-padrao, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error {
+.transition-padrao, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error, .botao-padrao, a.link-inscricao, .chamada-inscricao .lista-de-itens .item {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -139,7 +139,7 @@ header .logo {
   text-align: center;
 }
 header .logo img {
-  height: 1em;
+  height: 1.2em;
 }
 header span {
   display: block;
@@ -157,11 +157,11 @@ nav.menu {
   padding: 0;
 }
 nav.menu span.icon-menu {
-  font-size: 2.5em;
+  font-size: 3em;
   display: block;
+  margin: 0.2em;
   position: absolute;
   bottom: -0.5em;
-  padding: 0.8em;
 }
 nav.menu ul {
   display: none;
@@ -228,7 +228,7 @@ section.home h6 {
   padding: 1em 0 0;
 }
 section.home h6.local {
-  padding: 0.5em 0 2em 6.7em;
+  padding: 0.5em 0 2em 4em;
   color: #A90404;
 }
 section.sobre {
@@ -402,6 +402,22 @@ a {
 a:hover {
   color: black;
 }
+a.link-inscricao {
+  text-shadow: none;
+  border-color: #A90404;
+  font-size: 16px;
+  max-width: 600px;
+  text-transform: uppercase;
+}
+a.link-inscricao:hover {
+  background-color: #ff9f09;
+}
+a.link-principal {
+  color: #ffb33c;
+}
+a.link-principal:hover {
+  color: #ff9f09;
+}
 
 ul {
   margin: 0;
@@ -414,7 +430,7 @@ ul li {
   text-align: center;
 }
 
-.botao-padrao {
+.botao-padrao, a.link-inscricao {
   display: block;
   padding: 1em 2em;
   color: white;
@@ -423,6 +439,9 @@ ul li {
   margin: 1em auto;
   max-width: 400px;
   width: 100%;
+}
+.botao-padrao:hover, a.link-inscricao:hover {
+  background-color: #ff9f09;
 }
 
 .mce_inline_error {
@@ -534,6 +553,59 @@ table.tabela tbody tr:last-child {
 }
 table.tabela tbody tr.intervalo {
   background-color: #FFB019;
+}
+
+.inscricao {
+  color: #4d4d4d;
+}
+
+.inscricoes h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #A90404;
+}
+.inscricoes h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.chamada-inscricao .lista-de-itens {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.chamada-inscricao .lista-de-itens .item {
+  position: relative;
+  background: #eee;
+  border: 1px solid #ddd;
+  min-width: 12em;
+  margin: 2em 0.5em 0;
+  padding: 0.5em;
+  display: inline-block;
+  -webkit-flex: 1 0;
+  flex: 1 0;
+}
+.chamada-inscricao .lista-de-itens .item:hover {
+  background-color: #A90404;
+  border-color: #A90404;
+  color: white;
+}
+.chamada-inscricao .lista-de-itens .item span {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ffb33c;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  font-size: 1.5em;
+  color: white;
+  position: absolute;
+  left: 50%;
+  margin-left: -1em;
+  top: -1em;
 }
 
 /*# sourceMappingURL=padrao.css.map */
