@@ -81,5 +81,8 @@ html, body, .container, .cbp-fbscroller, .cbp-fbscroller section {
 #fbsection2, #fbsection.inscricao {
   background-image: url(../imgs/2.jpg);
 }
+#fbsection.inscricao {
+  min-height: auto;
+}
 
 /*# sourceMappingURL=scroll.css.map */

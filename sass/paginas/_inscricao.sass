@@ -48,3 +48,55 @@
                 left: 50%
                 margin-left: -1em
                 top: -1em
+                
+                
+
+.chamada-inscricoes-teste 
+
+    .lista-de-itens
+        
+        .item
+            @extend .transition-padrao
+            @extend .border-box
+            position: relative
+            background: #eee
+            border: 1px solid #ddd
+            min-width: 12em
+            margin: 1em 1em 0
+            padding: .5em
+            display: block
+            width: 100%
+            
+            
+            &:hover
+                background-color: $cor-secundaria
+                border-color: $cor-secundaria
+                color: $branco
+            
+            span
+                @extend .border-box
+                +border-radius(50%)
+                background-color: $cor-primaria
+                text-align: center
+                width: 2em
+                height: 2em
+                line-height: 2em
+                font-size: 1.5em
+                color: $branco
+                position: absolute
+                left: 50%
+                margin-left: -1em
+                top: -1em
+
+@media screen and (min-device-width: 800px)
+
+    .chamada-inscricoes-teste
+        
+        .lista-de-itens
+            
+            .item
+                display: inline-block
+                width: 22.5%
+                margin: 1em 1%
+                vertical-align: top
+                min-height: 9.5em

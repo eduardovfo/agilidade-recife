@@ -73,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 50%;
 }
 
-.border-box, header, nav.menu, nav.menu ul, nav.menu ul li, nav.menu ul li a, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error, section.palestrantes ul li, .botao-padrao, a.link-inscricao, #mce-error-response, #mce-success-response, .chamada-inscricao .lista-de-itens .item span {
+.border-box, header, nav.menu, nav.menu ul, nav.menu ul li, nav.menu ul li a, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error, section.palestrantes ul li, .botao-padrao, a.link-inscricao, #mce-error-response, #mce-success-response, .chamada-inscricao .lista-de-itens .item span, .chamada-inscricoes-teste .lista-de-itens .item, .chamada-inscricoes-teste .lista-de-itens .item span {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -94,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
 }
 
-.transition-padrao, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error, .botao-padrao, a.link-inscricao, .chamada-inscricao .lista-de-itens .item {
+.transition-padrao, section.sobre .contato input, section.sobre .contato button, section.sobre .contato .mce_inline_error, .botao-padrao, a.link-inscricao, .chamada-inscricao .lista-de-itens .item, .chamada-inscricoes-teste .lista-de-itens .item {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -606,6 +606,48 @@ table.tabela tbody tr.intervalo {
   left: 50%;
   margin-left: -1em;
   top: -1em;
+}
+
+.chamada-inscricoes-teste .lista-de-itens .item {
+  position: relative;
+  background: #eee;
+  border: 1px solid #ddd;
+  min-width: 12em;
+  margin: 1em 1em 0;
+  padding: 0.5em;
+  display: block;
+  width: 100%;
+}
+.chamada-inscricoes-teste .lista-de-itens .item:hover {
+  background-color: #A90404;
+  border-color: #A90404;
+  color: white;
+}
+.chamada-inscricoes-teste .lista-de-itens .item span {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #ffb33c;
+  text-align: center;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  font-size: 1.5em;
+  color: white;
+  position: absolute;
+  left: 50%;
+  margin-left: -1em;
+  top: -1em;
+}
+
+@media screen and (min-device-width: 800px) {
+  .chamada-inscricoes-teste .lista-de-itens .item {
+    display: inline-block;
+    width: 22.5%;
+    margin: 1em 1%;
+    vertical-align: top;
+    min-height: 9.5em;
+  }
 }
 
 /*# sourceMappingURL=padrao.css.map */
